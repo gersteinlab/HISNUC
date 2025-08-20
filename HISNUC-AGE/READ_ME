@@ -1,0 +1,10 @@
+#to run the HISNUC-Age code, the input parameters for train.py can be initialized as below.
+#Path to NIC compressed images, nucleus features extracted by qupath, and metadata need to be specified. 
+
+!python train.py --target 1 --seed 20 --test_size 0.33 --image_count 900 --learning_rate 0.0001 \
+--batch_size 40 --epochs 1000 \
+--image_dir 'path_to_compressed_image' \
+--csv_file 'path_to_gene_expression_file(‘only used for data filtering’)’ \
+--qupath_feature_path "path_to_qupath_feature" \
+--nuc_feature "Nucleus: Circularity std" "Nucleus: Circularity Q1" … \
+--metadata_file “path_to_meta_file”
