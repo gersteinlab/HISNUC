@@ -1,0 +1,11 @@
+#to run the HISNUC-X code, the input parameters for train.py can be initialized as below.
+#Path to NIC compressed images, nucleus features extracted by qupath, metadata, and target gene expression need to be specified. 
+
+!python train.py --target_genes 100 --seed 60 --test_size 0.33 --image_count 956 --learning_rate 0.0005 --batch_size 40 --epochs 1500 \
+--image_dir 'path_to_compressed_image' \
+--csv_file 'path_to_gene_expression_file' \
+--qupath_feature_path 'path_to_qupath_feature' \
+--metadata_file "path_to_meta_file" \
+--tissue_name “XXX” \ # for example ”Artery - Tibial"  "Esophagus - Mucosa"
+--tau_threshold 0.85 \
+--expression_threshold 1
