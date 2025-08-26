@@ -1,1 +1,0 @@
-singularity exec ASAP.sif python3 featurize_wsi.py 'GTEX-1117F-0526.svs' 'None' '/GTEx-image-NIC-Giga/image-NIC/artery-tibial-result' 0 0 128 128 2 '/GTEx-image-NIC-Giga/image-NIC/neural-image-compression-master/models/encoders_patches_pathology/encoder_bigan.h5' 1
