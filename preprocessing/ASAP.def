@@ -1,0 +1,51 @@
+Bootstrap: docker
+From: nvidia/cuda:9.2-cudnn7-devel-ubuntu18.04
+
+%labels
+    Name ASAP_s
+    
+%post
+    apt-get update && DEBIAN_FRONTEND=noninteractive \
+    apt-get install -y -qq --no-install-recommends \
+        cmake \
+        dpkg-dev \
+        file \
+        g++ \
+        make \
+        qt5-default \
+        qtbase5-dev \
+        qttools5-dev \
+        libqt5opengl5-dev \
+        git \
+        libboost-all-dev \
+        libopencv-dev \
+        libdcmtk-dev \
+        libopenjp2-7-dev \
+        libopenslide-dev \
+        wget \
+        swig \
+        libunittest++-dev \
+        ca-certificates \
+        nano \
+        python3.8 \
+        python3-pip \
+        python3-setuptools \
+        python3-tk
+    
+    echo "downloading Conda"
+    wget -q https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
+    mkdir /root/.conda &&\
+    bash Miniconda3-latest-Linux-x86_64.sh -b &&\
+    rm -f Miniconda3-latest-Linux-x86_64.sh    
+    
+    /root/miniconda3/bin/conda create  --name build_python3.8 python=3.8 && \
+    /root/miniconda3/bin/conda install -n build_python3.8 numpy nomkl
+    pip3 install --upgrade pip
+    pip3 install numpy scikit-image pandas Pillow scipy keras==2.2.4 tensorflow-gpu==1.14 SimpleITK jupyter
+    pip3 install h5py==2.10.0 --force-reinstall
+    
+    echo "downloading ASAP..."
+    wget https://github.com/computationalpathologygroup/ASAP/releases/download/1.9/ASAP-1.9-Linux-Ubuntu1804.deb && \
+    apt-get install -y ./ASAP-1.9-Linux-Ubuntu1804.deb
+
+
