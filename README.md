@@ -1,10 +1,12 @@
 # HISNUC
 # Data resources:
 QuPath extracted nuclear feature:
-A. summary statistics of nuclear features are available for download here:
-[`summary statistics (Supplementary Data 1)`](qupath-nuclear-feature-summary-statistics.zip)
 
 Raw nucleus features extracted by QuPath for each tissue are available for download [`here`](http://archive2.gersteinlab.org/proj/HISNUC-qupath-features/)
+
+summary statistics of nuclear features are available for download here:
+[`summary statistics`](https://github.com/gersteinlab/HISNUC/blob/main/Data%20Resources/Summary%20statistics%20of%20QuPath-extracted%20nucleus%20features%20across%20samples%20by%20tissue.xlsx)
+
 
 ImageQTL results with LD prunned using FUMA are available here: [`ImageQTL`](https://github.com/gersteinlab/HISNUC/blob/main/Data%20Resources/ImageQTL-FUMA-result.zip)
 
