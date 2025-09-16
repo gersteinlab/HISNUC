@@ -6,7 +6,7 @@ A. summary statistics of nuclear features are available for download here:
 
 Raw nucleus features extracted by QuPath for each tissue are available for download [`here`](http://archive2.gersteinlab.org/proj/HISNUC-qupath-features/)
 
-ImageQTL results with LD prunned using FUMA are available here: [`ImageQTL (Supplementary Data 2)`](ImageQTL-FUMA-result.zip)
+ImageQTL results with LD prunned using FUMA are available here: [`ImageQTL`](https://github.com/gersteinlab/HISNUC/blob/main/Data%20Resources/ImageQTL-FUMA-result.zip)
 
 DE genes results are splitted into three parts due to file size limitations. [`DEgenes1`](DE_genes_part1.zip)[`DEgenes2`](DE_genes_part2.zip)[`DEgenes3`](DE_genes_part3.zip)
 
