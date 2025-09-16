@@ -10,7 +10,7 @@ summary statistics of nuclear features are available for download here:
 
 ImageQTL results with LD prunned using FUMA are available here: [`ImageQTL`](https://github.com/gersteinlab/HISNUC/blob/main/Data%20Resources/ImageQTL-FUMA-result.zip)
 
-DE genes results are splitted into three parts due to file size limitations. [`DEgenes1`](DE_genes_part1.zip)[`DEgenes2`](DE_genes_part2.zip)[`DEgenes3`](DE_genes_part3.zip)
+DE genes results are splitted into three parts due to file size limitations. [`DEgenes1`](https://github.com/gersteinlab/HISNUC/blob/main/Data%20Resources/DE_genes_part1.zip)[`DEgenes2`](https://github.com/gersteinlab/HISNUC/blob/main/Data%20Resources/DE_genes_part2.zip)[`DEgenes3`](https://github.com/gersteinlab/HISNUC/blob/main/Data%20Resources/DE_genes_part3.zip)
 
 EWAS results (only for lung tissues) [`EWAS-lung`](EWAS.zip)
 
