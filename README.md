@@ -12,7 +12,7 @@ ImageQTL results with LD prunned using FUMA are available here: [`ImageQTL`](htt
 
 DE genes results are splitted into three parts due to file size limitations. [`DEgenes1`](https://github.com/gersteinlab/HISNUC/blob/main/Data%20Resources/DE_genes_part1.zip)[`DEgenes2`](https://github.com/gersteinlab/HISNUC/blob/main/Data%20Resources/DE_genes_part2.zip)[`DEgenes3`](https://github.com/gersteinlab/HISNUC/blob/main/Data%20Resources/DE_genes_part3.zip)
 
-EWAS results (only for lung tissues) [`EWAS-lung`](EWAS.zip)
+EWAS results (only for lung tissues) [`EWAS-lung`](https://github.com/gersteinlab/HISNUC/blob/main/Data%20Resources/EWAS_lung.zip)
 
 # Code resources:
 
